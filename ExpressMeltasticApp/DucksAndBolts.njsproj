@@ -34,7 +34,6 @@
   <ItemGroup>
     <Compile Include="api\words.js" />
     <Compile Include="app.js" />
-    <Compile Include="public\javascripts\JavaScript1.js" />
     <Compile Include="public\javascripts\typeahead.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="public\javascripts\ducks.js" />
