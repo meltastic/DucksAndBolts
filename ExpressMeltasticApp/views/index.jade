@@ -1,0 +1,26 @@
+﻿extends layout
+
+block content
+  .jumbotron
+    h1 Ducks and Bolts
+    p.lead Start typing to learn cool words
+    #the-basics
+        input.typeahead.form-control(id="word-search", type="text", placeholder="My New Words")
+        p
+            a.btn.btn-primary.btn-large(id="search-btn") Search &raquo;
+  .row
+    .col-md-4
+      h2 Who are we?
+      p We are word enthusiasts, that's who!
+      p
+        a.btn.btn-default(href='http://expressjs.com/') Learn more &raquo;
+    .col-md-4
+      h2 Psst... Mom, Dad... Check it out!
+      p We have some bizarre yet sophisticated words for you to learn too. Head this way!
+      p
+        a.btn.btn-default(href='https://www.npmjs.org/') Learn more &raquo;
+    .col-md-4
+      h2 Microsoft Azure
+      p You can easily publish to Microsoft Azure using Node.js Tools for Visual Studio. Find out how you can host your application using a free trial today.
+      p
+        a.btn.btn-default(href='http://azure.microsoft.com') Learn more &raquo;
