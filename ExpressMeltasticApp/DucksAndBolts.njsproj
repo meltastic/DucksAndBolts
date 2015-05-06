@@ -5,6 +5,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>DucksAndBolts</Name>
     <RootNamespace>ExpressMeltasticApp</RootNamespace>
+    <NameOfLastUsedPublishProfile>ducksandbolts</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -39,6 +40,7 @@
     <Compile Include="public\javascripts\ducks.js" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ducksandbolts.pubxml" />
     <Content Include="public\images\apple.jpg" />
     <Content Include="public\images\ball.jpg" />
     <Content Include="public\images\bolts.jpg" />

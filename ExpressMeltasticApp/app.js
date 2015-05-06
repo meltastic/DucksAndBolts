@@ -34,7 +34,6 @@ app.get('/', routes.index);
 app.get('/about', routes.about);
 app.get('/contact', routes.contact);
 app.get('/myword/:word', function (req, res) {
-    //console.log(decodeURIComponent(req.params.word));
     res.render('myword', { title: 'My Word', year: new Date().getFullYear(), message: "Here's your word!" });
 });
 
@@ -43,7 +42,7 @@ app.get('/words', function (req, res) {
     res.send(JSON.stringify(wordList));
 });
 
-app.get('/search/:word', function (req, res) {
+app.get('/search/:word?', function (req, res) {
     var searchWord = req.params.word;
     console.log(searchWord);
 
@@ -54,13 +53,19 @@ app.get('/search/:word', function (req, res) {
     var resObj = {};
     resObj.title = 'My Word';
     resObj.year = new Date().getFullYear();
-
-    if (results) {
+    
+    // if no word was passed back in search, then grab a random word and return a special message
+    if (searchWord == null || searchWord == "") {
+        var randomWord = _.sample(words);
+        resObj.word = randomWord.name
+        resObj.img = randomWord.img;
+        resObj.letter = randomWord.letter;
+        resObj.msg = "We couldn't find a word that matches your search, but here's a cool word we like!";
+    } else if (results) {
         // just bring back a random matching result if there's more than one
         if (_.isArray(results)) {
             results = _.sample(results);
         }
-        //var resJson = results;
         resObj.word = results.name;
         resObj.img = results.img;
         resObj.letter = results.letter;

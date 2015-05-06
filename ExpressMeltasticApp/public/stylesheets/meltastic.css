@@ -113,13 +113,26 @@ p + p {
 #rtl-support .tt-menu {
     text-align: right;
 }
-#search-btn {
+.duck-btn {
     background-color: #FFCC00;
     color: black;
     border-color: #FFCC00;
     font-weight: bold;
 }
 .my-word {
-    width: 100%;
+    color: black;
     background-color: white;
+}
+.navbar {
+    font-weight: bold;
+}
+.letter {
+    font-size: 70px;
+    font-weight: bold;
+}
+.word-text {
+    font-size: 45px;
+}
+.duck-pad {
+    padding-top: 15px;
 }

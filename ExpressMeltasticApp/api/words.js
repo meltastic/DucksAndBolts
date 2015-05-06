@@ -32,7 +32,7 @@ module.exports = [
     },
     {
         "name": "fish",
-        "img": "/images/fish.jpg",
+        "img": "/images/fish.png",
         "letter": "F"
     },
     {
@@ -52,7 +52,7 @@ module.exports = [
     },
     {
         "name": "lion",
-        "img": "/images/lion.jpg",
+        "img": "/images/lion.jpeg",
         "letter": "L"
     },
     {
