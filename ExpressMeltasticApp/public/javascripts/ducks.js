@@ -1,12 +1,5 @@
 ﻿
 $(function () {
-    //$.getJSON("/todos", function (data) {
-    //    for (var key in data) {
-    //        addNewEntry(key, data[key]);
-    //    }
-        
-    //    addNewEntry();
-    //});
     if (window.location.pathname.indexOf('search') != -1) {
         $("body").css('background-color', '#fff');
     }
